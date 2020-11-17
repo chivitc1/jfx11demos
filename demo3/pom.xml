@@ -2,16 +2,8 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.example</groupId>
-    <artifactId>jfxdemo</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>demo3</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>demo2</module>
-        <module>demo3</module>
-        <module>demo4</module>
-        <module>demo4</module>
-        <module>demo5</module>
-    </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
@@ -21,11 +13,6 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>11</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-fxml</artifactId>
             <version>11</version>
         </dependency>
     </dependencies>
@@ -42,9 +29,9 @@
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
-                <version>0.0.5</version>
+                <version>0.0.4</version>
                 <configuration>
-                    <mainClass>org.example.App</mainClass>
+                    <mainClass>org.example.Demo3App</mainClass>
                 </configuration>
             </plugin>
         </plugins>
