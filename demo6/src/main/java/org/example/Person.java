@@ -1,7 +1,9 @@
 package org.example;
 
+import javafx.beans.Observable;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
+import javafx.util.Callback;
 
 import java.util.Objects;
 
@@ -75,4 +77,8 @@ public class Person {
     public String toString() {
         return firstname.get() + " " + lastname.get();
     }
+
+    public static Callback<Person, Observable[]> extractor = p -> new Observable[] {
+            p.lastnameProperty(), p.firstnameProperty()
+    };
 }
